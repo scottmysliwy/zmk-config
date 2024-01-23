@@ -42,12 +42,6 @@
         };
 
         cap-layer {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
-
             bindings = <
 &kp TAB    &kp LS(Q)  &kp LS(W)  &kp LS(F)  &kp LS(P)  &kp LS(G)    &kp LS(J)  &kp LS(L)  &kp LS(U)      &kp LS(Y)  &kp SEMICOLON  &kp BSPC
 &kp LCTRL  &kp LS(A)  &kp LS(R)  &kp LS(S)  &kp LS(T)  &kp LS(D)    &kp LS(H)  &kp LS(N)  &kp LS(E)      &kp LS(I)  &kp LS(O)      &kp SQT
@@ -57,11 +51,6 @@
         };
 
 	alt-layer {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
     bindings = <
         &kp TAB    &kp LA(Q)  &kp LA(W)  &kp LA(E)  &kp LA(R)  &kp LA(T)    &kp LA(Y)  &kp LA(U)  &kp LA(I)      &kp LA(O)  &kp LA(P)        &kp BSPC
         &kp LCTRL  &kp LA(A)  &kp LA(S)  &kp LA(D)  &kp LA(F)  &kp LA(G)    &kp LA(H)  &kp LA(J)  &kp LA(K)      &kp LA(L)  &kp LA(SEMICOLON)&kp SQT
@@ -71,11 +60,6 @@
 };
 
 ctl-layer {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
     bindings = <
         &kp TAB    &kp LC(Q)  &kp LC(W)  &kp LC(E)  &kp LC(R)  &kp LC(T)    &kp LC(Y)  &kp LC(U)  &kp LC(I)      &kp LC(O)  &kp LC(P)        &kp BSPC
         &kp LCTRL  &kp LC(A)  &kp LC(S)  &kp LC(D)  &kp LC(F)  &kp LC(G)    &kp LC(H)  &kp LC(J)  &kp LC(K)      &kp LC(L)  &kp LC(SEMICOLON)&kp SQT
@@ -86,69 +70,10 @@ ctl-layer {
 
 
 win-layer {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
     bindings = <
         &kp TAB    &kp LG(Q)  &kp LG(W)  &kp LG(E)  &kp LG(R)  &kp LG(T)    &kp LG(Y)  &kp LG(U)  &kp LG(I)      &kp LG(O)  &kp LG(P)        &kp BSPC
         &kp LCTRL  &kp LG(A)  &kp LG(S)  &kp LG(D)  &kp LG(F)  &kp LG(G)    &kp LG(H)  &kp LG(J)  &kp LG(K)      &kp LG(L)  &kp LG(SEMICOLON)&kp SQT
         &kp LSHFT  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(B)    &kp LG(N)  &kp LG(M)  &kp LG(COMMA)  &kp DOT    &kp LG(FSLH)    &kp ESC
-                                     &kp LGUI   &mo 0      &kp SPACE    &kp RET    &mo 1      &kp RALT
-    >;
-};
-alt-ctl-layer {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
-    bindings = <
-        &kp TAB    &kp LCA(Q) &kp LCA(W) &kp LCA(E) &kp LCA(R) &kp LCA(T)   &kp LCA(Y) &kp LCA(U) &kp LCA(I)     &kp LCA(O) &kp LCA(P)       &kp BSPC
-        &kp LCTRL  &kp LCA(A) &kp LCA(S) &kp LCA(D) &kp LCA(F) &kp LCA(G)   &kp LCA(H) &kp LCA(J) &kp LCA(K)     &kp LCA(L) &kp LCA(SEMICOLON)&kp SQT
-        &kp LSHFT  &kp LCA(Z) &kp LCA(X) &kp LCA(C) &kp LCA(V) &kp LCA(B)   &kp LCA(N) &kp LCA(M) &kp LCA(COMMA) &kp DOT    &kp LCA(FSLH)   &kp ESC
-                                     &kp LGUI   &mo 0      &kp SPACE    &kp RET    &mo 1      &kp RALT
-    >;
-};
-
-alt-ctl-win-layer {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
-    bindings = <
-        &kp TAB    &kp LCAG(Q) &kp LCAG(W) &kp LCAG(E) &kp LCAG(R) &kp LCAG(T)   &kp LCAG(Y) &kp LCAG(U) &kp LCAG(I)     &kp LCAG(O) &kp LCAG(P)       &kp BSPC
-        &kp LCTRL  &kp LCAG(A) &kp LCAG(S) &kp LCAG(D) &kp LCAG(F) &kp LCAG(G)   &kp LCAG(H) &kp LCAG(J) &kp LCAG(K)     &kp LCAG(L) &kp LCAG(SEMICOLON)&kp SQT
-        &kp LSHFT  &kp LCAG(Z) &kp LCAG(X) &kp LCAG(C) &kp LCAG(V) &kp LCAG(B)   &kp LCAG(N) &kp LCAG(M) &kp LCAG(COMMA) &kp DOT     &kp LCAG(FSLH)   &kp ESC
-                                     &kp LGUI   &mo 0      &kp SPACE    &kp RET    &mo 1      &kp RALT
-    >;
-};
-
-win-ctl-layer {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
-    bindings = <
-        &kp TAB    &kp LCG(Q) &kp LCG(W) &kp LCG(E) &kp LCG(R) &kp LCG(T)   &kp LCG(Y) &kp LCG(U) &kp LCG(I)     &kp LCG(O) &kp LCG(P)       &kp BSPC
-        &kp LCTRL  &kp LCG(A) &kp LCG(S) &kp LCG(D) &kp LCG(F) &kp LCG(G)   &kp LCG(H) &kp LCG(J) &kp LCG(K)     &kp LCG(L) &kp LCG(SEMICOLON)&kp SQT
-        &kp LSHFT  &kp LCG(Z) &kp LCG(X) &kp LCG(C) &kp LCG(V) &kp LCG(B)   &kp LCG(N) &kp LCG(M) &kp LCG(COMMA) &kp DOT    &kp LCG(FSLH)   &kp ESC
-                                     &kp LGUI   &mo 0      &kp SPACE    &kp RET    &mo 1      &kp RALT
-    >;
-};
-win-alt-layer {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
-    bindings = <
-        &kp TAB    &kp LGA(Q) &kp LGA(W) &kp LGA(E) &kp LGA(R) &kp LGA(T)   &kp LGA(Y) &kp LGA(U) &kp LGA(I)     &kp LGA(O) &kp LGA(P)       &kp BSPC
-        &kp LCTRL  &kp LGA(A) &kp LGA(S) &kp LGA(D) &kp LGA(F) &kp LGA(G)   &kp LGA(H) &kp LGA(J) &kp LGA(K)     &kp LGA(L) &kp LGA(SEMICOLON)&kp SQT
-        &kp LSHFT  &kp LGA(Z) &kp LGA(X) &kp LGA(C) &kp LGA(V) &kp LGA(B)   &kp LGA(N) &kp LGA(M) &kp LGA(COMMA) &kp DOT    &kp LGA(FSLH)   &kp ESC
                                      &kp LGUI   &mo 0      &kp SPACE    &kp RET    &mo 1      &kp RALT
     >;
 };
