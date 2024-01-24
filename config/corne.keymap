@@ -30,7 +30,7 @@
         stickytap: stickytap_onekeyhold {
             compatible = "zmk,behavior-hold-tap";
             label = "STICKYTAP/ONEKEYHOLD";
-            bindings = <&mo>, <&sl>;
+            bindings = <&mo>, <&tog>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -48,10 +48,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB  &kp Q  &kp W  &kp F  &kp P  &kp G        &kp J    &kp L  &kp U      &kp Y    &kp SEMICOLON  &kp BSPC
-&kp ESC  &kp A  &kp R  &kp S  &kp T  &kp D        &kp H    &kp N  &kp E      &kp I    &kp O          &kp SQT
-&sl 5    &kp Z  &kp X  &kp C  &kp V  &kp B        &kp K    &kp M  &kp COMMA  &kp DOT  &kp FSLH       &kp ESC
-                       &sl 1  &sl 2  &kp SPACE    &kp RET  &sl 3  &sl 4
+&kp TAB         &kp Q  &kp W  &kp F  &kp P  &kp G        &kp J    &kp L  &kp U      &kp Y    &kp SEMICOLON  &kp BSPC
+&kp ESC         &kp A  &kp R  &kp S  &kp T  &kp D        &kp H    &kp N  &kp E      &kp I    &kp O          &kp SQT
+&stickytap 5 5  &kp Z  &kp X  &kp C  &kp V  &kp B        &kp K    &kp M  &kp COMMA  &kp DOT  &kp FSLH       &kp ESC
+                              &sl 1  &sl 2  &kp SPACE    &kp RET  &sl 3  &sl 4
             >;
         };
 
