@@ -48,10 +48,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp F           &kp P           &kp G        &kp J    &kp L           &kp U           &kp Y    &kp SEMICOLON  &kp BSPC
-&kp ESC         &kp A  &kp R  &kp S           &kp T           &kp D        &kp H    &kp N           &kp E           &kp I    &kp O          &kp SQT
-&stickytap 5 5  &kp Z  &kp X  &kp C           &kp V           &kp B        &kp K    &kp M           &kp COMMA       &kp DOT  &kp FSLH       &kp ESC
-                              &stickytap 1 1  &stickytap 2 2  &kp SPACE    &kp RET  &stickytap 3 3  &stickytap 4 4
+&kp TAB  &kp Q  &kp W  &kp F  &kp P  &kp G        &kp J    &kp L  &kp U      &kp Y    &kp SEMICOLON  &kp BSPC
+&kp ESC  &kp A  &kp R  &kp S  &kp T  &kp D        &kp H    &kp N  &kp E      &kp I    &kp O          &kp SQT
+&sl 5    &kp Z  &kp X  &kp C  &kp V  &kp B        &kp K    &kp M  &kp COMMA  &kp DOT  &kp FSLH       &kp ESC
+                       &sl 1  &sl 2  &kp SPACE    &kp RET  &sl 3  &sl 4
             >;
         };
 
@@ -63,19 +63,19 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp C_VOLUME_UP  &kp EXCL      &kp AT        &kp HASH      &kp DLLR        &kp PRCNT    &kp CARET  &kp AMPS    &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
-&trans           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4    &kp N5       &kp MINUS  &kp EQUAL   &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
-&kp C_VOL_DN     &kp NUMBER_6  &kp N7        &kp N8        &kp N9          &kp N0       &kp UNDER  &kp PLUS    &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
-                                             &trans        &stickytap 0 0  &kp SPACE    &kp RET    &stickytap  &trans
+&kp C_VOLUME_UP  &kp EXCL      &kp AT        &kp HASH      &kp DLLR      &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
+&trans           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5       &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
+&kp C_VOL_DN     &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp N0       &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
+                                             &trans        &sl 0         &kp SPACE    &kp RET    &sl 2      &trans
             >;
         };
 
         cap-layer {
             bindings = <
-&trans  &kp LS(Q)  &kp LS(W)  &kp LS(F)  &kp LS(P)       &kp LS(G)    &kp LS(J)  &kp LS(L)       &kp LS(U)      &kp LS(Y)         &kp COLON     &kp BSPC
-&trans  &kp LS(A)  &kp LS(R)  &kp LS(S)  &kp LS(T)       &kp LS(D)    &kp LS(H)  &kp LS(N)       &kp LS(E)      &kp LS(I)         &kp LS(O)     &kp DOUBLE_QUOTES
-&trans  &kp LS(Z)  &kp LS(X)  &kp LS(C)  &kp LS(V)       &kp LS(B)    &kp LS(K)  &kp LS(M)       &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION  &kp ESC
-                              &trans     &stickytap 0 0  &kp SPACE    &kp RET    &stickytap 1 1  &trans
+&trans  &kp LS(Q)  &kp LS(W)  &kp LS(F)  &kp LS(P)  &kp LS(G)    &kp LS(J)  &kp LS(L)  &kp LS(U)      &kp LS(Y)         &kp COLON     &kp BSPC
+&trans  &kp LS(A)  &kp LS(R)  &kp LS(S)  &kp LS(T)  &kp LS(D)    &kp LS(H)  &kp LS(N)  &kp LS(E)      &kp LS(I)         &kp LS(O)     &kp DOUBLE_QUOTES
+&trans  &kp LS(Z)  &kp LS(X)  &kp LS(C)  &kp LS(V)  &kp LS(B)    &kp LS(K)  &kp LS(M)  &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION  &kp ESC
+                              &trans     &sl 0      &kp SPACE    &kp RET    &sl 1      &trans
             >;
         };
 
