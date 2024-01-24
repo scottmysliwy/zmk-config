@@ -19,10 +19,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB           &kp Q  &kp W  &kp F           &kp P  &kp G        &kp J    &kp L  &kp U            &kp Y    &kp SEMICOLON  &kp BSPC
-&kp ESC           &kp A  &kp R  &kp S           &kp T  &kp D        &kp H    &kp N  &kp E            &kp I    &kp O          &kp SQT
-&lt 2 LEFT_SHIFT  &kp Z  &kp X  &kp C           &kp V  &kp B        &kp K    &kp M  &kp COMMA        &kp DOT  &kp FSLH       &kp ESC
-                                &lt 5 LEFT_WIN  &mo 0  &kp SPACE    &kp RET  &mo 1  &lt 3 RIGHT_ALT
+&kp TAB  &kp Q  &kp W  &kp F  &kp P  &kp G        &kp J    &kp L  &kp U      &kp Y    &kp SEMICOLON  &kp BSPC
+&kp ESC  &kp A  &kp R  &kp S  &kp T  &kp D        &kp H    &kp N  &kp E      &kp I    &kp O          &kp SQT
+&sl 2    &kp Z  &kp X  &kp C  &kp V  &kp B        &kp K    &kp M  &kp COMMA  &kp DOT  &kp FSLH       &kp ESC
+                       &sl 5  &mo 1  &kp SPACE    &kp RET  &sl 2  &sl 3
             >;
         };
 
@@ -34,45 +34,45 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans   &kp EXCL      &kp AT        &kp HASH      &kp DLLR      &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
-&kp ESC  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5       &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
-&trans   &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp N0       &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
-                                     &trans        &to 0         &kp SPACE    &kp RET    &to 3      &trans
+&kp C_VOLUME_UP  &kp EXCL      &kp AT        &kp HASH      &kp DLLR      &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
+&sl 0            &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5       &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
+&kp C_VOL_DN     &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp N0       &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
+                                             &trans        &sl 0         &kp SPACE    &kp RET    &to 3      &trans
             >;
         };
 
         cap-layer {
             bindings = <
-&trans   &kp LS(Q)  &kp LS(W)  &kp LS(F)  &kp LS(P)  &kp LS(G)    &kp LS(J)  &kp LS(L)  &kp LS(U)      &kp LS(Y)  &kp SEMICOLON  &kp BSPC
-&kp ESC  &kp LS(A)  &kp LS(R)  &kp LS(S)  &kp LS(T)  &kp LS(D)    &kp LS(H)  &kp LS(N)  &kp LS(E)      &kp LS(I)  &kp LS(O)      &kp SQT
-&trans   &kp LS(Z)  &kp LS(X)  &kp LS(C)  &kp LS(V)  &kp LS(B)    &kp LS(K)  &kp LS(M)  &kp LS(COMMA)  &kp DOT    &kp FSLH       &kp ESC
-                               &trans     &mo 0      &kp SPACE    &kp RET    &mo 1      &trans
+&trans  &kp LS(Q)  &kp LS(W)  &kp LS(F)  &kp LS(P)  &kp LS(G)    &kp LS(J)  &kp LS(L)  &kp LS(U)      &kp LS(Y)         &kp COLON     &kp BSPC
+&trans  &kp LS(A)  &kp LS(R)  &kp LS(S)  &kp LS(T)  &kp LS(D)    &kp LS(H)  &kp LS(N)  &kp LS(E)      &kp LS(I)         &kp LS(O)     &kp DOUBLE_QUOTES
+&trans  &kp LS(Z)  &kp LS(X)  &kp LS(C)  &kp LS(V)  &kp LS(B)    &kp LS(K)  &kp LS(M)  &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION  &kp ESC
+                              &trans     &mo 0      &kp SPACE    &kp RET    &mo 1      &trans
             >;
         };
 
         alt-layer {
             bindings = <
-&trans  &kp LA(Q)  &kp LA(W)  &kp LA(E)  &kp LA(R)  &kp LA(T)    &kp LA(Y)  &kp LA(U)  &kp LA(I)      &kp LA(O)  &kp LA(P)          &kp BSPC
-&trans  &kp LA(A)  &kp LA(S)  &kp LA(D)  &kp LA(F)  &kp LA(G)    &kp LA(H)  &kp LA(J)  &kp LA(K)      &kp LA(L)  &kp LA(SEMICOLON)  &kp SQT
-&trans  &kp LA(Z)  &kp LA(X)  &kp LA(C)  &kp LA(V)  &kp LA(B)    &kp LA(N)  &kp LA(M)  &kp LA(COMMA)  &kp DOT    &kp LA(FSLH)       &kp ESC
+&trans  &kp LA(Q)  &kp LA(W)  &kp LA(E)  &kp LA(R)  &kp LA(T)    &kp LA(Y)  &kp LA(U)  &kp LA(I)      &kp LA(O)    &kp LA(P)          &kp BSPC
+&trans  &kp LA(A)  &kp LA(S)  &kp LA(D)  &kp LA(F)  &kp LA(G)    &kp LA(H)  &kp LA(J)  &kp LA(K)      &kp LA(L)    &kp LA(SEMICOLON)  &kp RA(SQT)
+&trans  &kp LA(Z)  &kp LA(X)  &kp LA(C)  &kp LA(V)  &kp LA(B)    &kp LA(N)  &kp LA(M)  &kp LA(COMMA)  &kp LA(DOT)  &kp LA(FSLH)       &kp ESC
                               &trans     &mo 0      &kp SPACE    &kp RET    &mo 1      &trans
             >;
         };
 
         ctl-layer {
             bindings = <
-&trans  &kp LC(Q)  &kp LC(W)  &kp LC(E)  &kp LC(R)  &kp LC(T)    &kp LC(Y)  &kp LC(U)  &kp LC(I)      &kp LC(O)  &kp LC(P)          &kp BSPC
-&trans  &kp LC(A)  &kp LC(S)  &kp LC(D)  &kp LC(F)  &kp LC(G)    &kp LC(H)  &kp LC(J)  &kp LC(K)      &kp LC(L)  &kp LC(SEMICOLON)  &kp SQT
-&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)    &kp LC(N)  &kp LC(M)  &kp LC(COMMA)  &kp DOT    &kp LC(FSLH)       &kp ESC
+&trans  &kp LC(Q)  &kp LC(W)  &kp LC(E)  &kp LC(R)  &kp LC(T)    &kp LC(Y)  &kp LC(U)  &kp LC(I)      &kp LC(O)    &kp LC(P)          &kp BSPC
+&trans  &kp LC(A)  &kp LC(S)  &kp LC(D)  &kp LC(F)  &kp LC(G)    &kp LC(H)  &kp LC(J)  &kp LC(K)      &kp LC(L)    &kp LC(SEMICOLON)  &kp LC(SQT)
+&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)    &kp LC(N)  &kp LC(M)  &kp LC(COMMA)  &kp LC(DOT)  &kp LC(FSLH)       &kp ESC
                               &trans     &mo 0      &kp SPACE    &kp RET    &mo 1      &trans
             >;
         };
 
         win-layer {
             bindings = <
-&trans  &kp LG(Q)  &kp LG(W)  &kp LG(E)  &kp LG(R)  &kp LG(T)    &kp LG(Y)  &kp LG(U)  &kp LG(I)      &kp LG(O)  &kp LG(P)          &kp BSPC
-&trans  &kp LG(A)  &kp LG(S)  &kp LG(D)  &kp LG(F)  &kp LG(G)    &kp LG(H)  &kp LG(J)  &kp LG(K)      &kp LG(L)  &kp LG(SEMICOLON)  &kp SQT
-&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(B)    &kp LG(N)  &kp LG(M)  &kp LG(COMMA)  &kp DOT    &kp LG(FSLH)       &kp ESC
+&trans  &kp LG(Q)  &kp LG(W)  &kp LG(E)  &kp LG(R)  &kp LG(T)    &kp LG(Y)  &kp LG(U)  &kp LG(I)      &kp LG(O)    &kp LG(P)          &kp BSPC
+&trans  &kp LG(A)  &kp LG(S)  &kp LG(D)  &kp LG(F)  &kp LG(G)    &kp LG(H)  &kp LG(J)  &kp LG(K)      &kp LG(L)    &kp LG(SEMICOLON)  &kp LG(SQT)
+&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(B)    &kp LG(N)  &kp LG(M)  &kp LG(COMMA)  &kp LG(DOT)  &kp LG(FSLH)       &kp ESC
                               &trans     &mo 0      &kp SPACE    &kp RET    &mo 1      &trans
             >;
         };
